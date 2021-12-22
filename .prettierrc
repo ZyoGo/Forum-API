@@ -8,5 +8,11 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "always",
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "object-curly-newline": [
+    "error",
+    {
+      "multiline": true
+    }
+  ]
 }
