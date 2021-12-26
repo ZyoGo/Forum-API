@@ -35,7 +35,7 @@ exports.up = (pgm) => {
 };
 
 exports.down = (pgm) => {
-  pgm.dropTabel('comments');
   pgm.dropConstraint('comments', 'fk_comments.thread_id_threads.id');
   pgm.dropConstraint('comments', 'fk_comments.owner_id_users.id');
+  pgm.dropTable('comments');
 };
