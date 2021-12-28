@@ -34,11 +34,10 @@ describe('GetThread entities', () => {
       body: 'sebuah body thread',
       date: '2021-12-08T07:19:09.775Z',
       username: 'bob',
-      comments: [],
     };
 
     // Action
-    const { id, title, body, date, username, comments } = new GetThread(payload);
+    const { id, title, body, date, username } = new GetThread(payload);
 
     // Assert
     expect(id).toEqual(payload.id);
@@ -46,6 +45,5 @@ describe('GetThread entities', () => {
     expect(body).toEqual(payload.body);
     expect(date).toEqual(payload.date);
     expect(username).toEqual(payload.username);
-    expect(comments).toEqual(payload.comments);
   });
 });
